@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout
-        uses: "actions/checkout@something"
+        uses: "actions/checkout@v1"
         
       - name: My first step
         run: echo This is the first step of my first job.
