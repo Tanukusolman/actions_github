@@ -44,6 +44,11 @@ pipeline{
                 }
             }
         }
+        stage('Example') {
+            steps {
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
+            }
+        }
         stage('mail'){
            steps{
                mail bcc: 'akki2483@gmail.com', body: 'HI team, this is for build testing process.', cc: 'lohita.tirunagari@gmail.com', from: '', replyTo: '', subject: 'Jenkins bob failure or success', to: 'tanukusunny11@gmail.com'
